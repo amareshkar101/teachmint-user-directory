@@ -32,7 +32,6 @@ const UserProfile = () => {
   };
 
   const getUserData = (id, userData) => {
-
     const findObjectById = (array, id) => {
       return array.find((obj) => obj.id == id);
     };
@@ -61,11 +60,9 @@ const UserProfile = () => {
   }, [id, userData, postData]);
 
   //   const fetchCountryTime = async (countryName) => {
-  //     console.log("countryName", countryName);
   //     setLoading(true);
   //     const res = await fetch(COUNTRY_API / `${countryName}`);
   //     const data = await res.json();
-  //     console.log("data---", data);
   //     if (res?.status === 200) {
   //       //   setCountryData(data);
   //       setLoading(false);
